@@ -18,6 +18,8 @@ builder.Services.AddDbContext<NorthwindDbContext>(options =>
 {
     options.UseSqlServer(settings.Database.ConnectionString);
 });
+builder.Services.AddCors(option => { option.AddPolicy("all", p => { p.AllowAnyOrigin().AllowAnyHeader(); }); });
+//builder.Services.AddCors(option => { option.AddPolicy("any", p => { p.WithOrigins("http://www.sergen.com").AllowAnyHeader(); }); });
 //Data Services
 builder.Services.AddDataServices();
 
@@ -31,7 +33,16 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseCors("all");
 app.MapControllers();
 
 app.Run();
+
+
+
+
+
+
+
+//TODO: Customer içim Create,Read,Update,Delete,List Actionlarýný tasarlayýn,
+//PostMan ile istekler atýp attýðýnýz istekleri export ederek projenize atýn
