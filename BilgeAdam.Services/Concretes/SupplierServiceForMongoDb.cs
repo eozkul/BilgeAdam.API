@@ -6,9 +6,24 @@ namespace BilgeAdam.Services.Concretes
 {
     internal class SupplierServiceForMongoDb : ISupplierService
     {
-        public List<SupplierListDto> GetAllSuppliers()
+        public bool AddNewSupplier(SupplierAddDto dto)
         {
-            return new List<SupplierListDto>();
+            throw new NotImplementedException();
+        }
+
+        public PagedList<List<SupplierListDto>> GetPagedSuppliers(int count, int page)
+        {
+            throw new NotImplementedException();
+        }
+
+        public SupplierDto GetSupplierById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool RemoveSupplier(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

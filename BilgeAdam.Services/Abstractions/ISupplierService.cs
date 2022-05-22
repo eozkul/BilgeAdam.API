@@ -9,6 +9,9 @@ namespace BilgeAdam.Services.Abstractions
 {
     public interface ISupplierService
     {
-        List<SupplierListDto> GetAllSuppliers();
+        PagedList<List<SupplierListDto>> GetPagedSuppliers(int count,int page);
+        SupplierDto GetSupplierById(int id);
+        bool AddNewSupplier(SupplierAddDto dto);
+        bool RemoveSupplier(int id);
     }
 }
