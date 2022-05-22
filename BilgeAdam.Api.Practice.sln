@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.Api.Practice", "BilgeAdam.Api.Practice\BilgeAdam.Api.Practice.csproj", "{C238FCC6-ED68-4A41-B2FD-4E159C7068E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.Data", "BilgeAdam.Data\BilgeAdam.Data.csproj", "{1349C2D2-28C3-44B3-9B92-1986E67D3C46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.Services", "BilgeAdam.Services\BilgeAdam.Services.csproj", "{255F9EC8-C2E7-4A77-ACDD-D84130C4666E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BilgeAdam.Common", "BilgeAdam.Common\BilgeAdam.Common.csproj", "{CDA0556E-A3A3-4D35-9128-E62FF5D5377A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C238FCC6-ED68-4A41-B2FD-4E159C7068E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C238FCC6-ED68-4A41-B2FD-4E159C7068E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C238FCC6-ED68-4A41-B2FD-4E159C7068E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C238FCC6-ED68-4A41-B2FD-4E159C7068E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1349C2D2-28C3-44B3-9B92-1986E67D3C46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1349C2D2-28C3-44B3-9B92-1986E67D3C46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1349C2D2-28C3-44B3-9B92-1986E67D3C46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1349C2D2-28C3-44B3-9B92-1986E67D3C46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{255F9EC8-C2E7-4A77-ACDD-D84130C4666E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{255F9EC8-C2E7-4A77-ACDD-D84130C4666E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{255F9EC8-C2E7-4A77-ACDD-D84130C4666E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{255F9EC8-C2E7-4A77-ACDD-D84130C4666E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDA0556E-A3A3-4D35-9128-E62FF5D5377A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA0556E-A3A3-4D35-9128-E62FF5D5377A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDA0556E-A3A3-4D35-9128-E62FF5D5377A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA0556E-A3A3-4D35-9128-E62FF5D5377A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {660C6799-6287-490F-8AE1-A3449BAC9E31}
+	EndGlobalSection
+EndGlobal
