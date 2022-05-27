@@ -22,6 +22,21 @@ namespace BilgeAdam.Console.App
                     }
                 }
             }
+          
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("https://localhost:7000");
+                var response = client.GetAsync("api/category/list?count=10&page=1").Result;
+                if (response.IsSuccessStatusCode)
+                {
+                    var jsonResult = response.Content.ReadAsStringAsync().Result;
+                    var result = JsonSerializer.Deserialize<PagedList<List<CategoryListDto>>>(jsonResult);
+                    foreach (var item in result.Data)
+                    {
+                        System.Console.WriteLine($"{item.CategoryName}");
+                    }
+                }
+            }
             System.Console.ReadLine();
         }
     }
